@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-class=" 8">
+    <metaviewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Cruds</title>
+</head>
+
+<body onclick="getTotal()">
+
+    <div class="container" onclick="getTotal()" onkeyup="getTotal()">
+        <div class="head">
+            <h1>Cruds</h1>
+            <p>prodcut management system</p>
+        </div>
+        <div class="inputs">
+            <input class="title" type="text" placeholder="Title">
+            <div class="money">
+                <input class="price" type="number" placeholder="Price">
+                <input class="taxes" type="number" placeholder="Taxes">
+                <input class="ads" type="number" placeholder="Ads">
+                <input class="discount" type="number" placeholder="Discount">
+                <span class="total">0</span>
+            </div>
+            <input class="count" type="number" placeholder="Count">
+            <input class="category" type="text" placeholder="Category">
+            <button class="submit" type="submit">Create</button>
+            <input onkeyup="searchFn(this.value)" class="search" type="text" placeholder="Search By Title">
+            <div class="sr-btns">
+                <button onclick="setSearchMood('title')" class="sr-ti" type="button">Search By Title</button>
+                <button onclick="setSearchMood('category')" class="sr-ct" type="button">Search By Category</button>
+            </div>
+            <button class="del-all" type="button">Delete All (<span></span>)</button>
+        </div>
+        <div class="outputs">
+            <table>
+                <thead>
+                    <tr>
+                        <td>id</td>
+                        <td>title</td>
+                        <td>price</td>
+                        <td>taxes</td>
+                        <td>ads</td>
+                        <td>discount</td>
+                        <td>total</td>
+                        <td>category</td>
+                        <td>count</td>
+                        <td>update</td>
+                        <td>delete</td>
+                    </tr>
+                </thead>
+                <tbody class="tabel-body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

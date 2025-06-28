@@ -1,0 +1,210 @@
+/* start component*/
+input,
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: large;
+}
+
+input::placeholder {
+    font-size: medium;
+}
+
+button {
+    background-color: rgb(44, 44, 254);
+    border-radius: 50px;
+    color: white;
+    transition: 0.3s;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+body {
+    background-color: #111111;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+/* head style */
+
+.head {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.head h1 {
+    margin: 15px 0 0;
+}
+
+.head h1::after {
+    content: " (ELASY)";
+    font-size: 14px;
+    color: rgb(81, 255, 0);
+}
+
+.head p {
+    margin-top: 5px;
+}
+
+/* inputs style */
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs .title {
+    margin-bottom: 10px;
+}
+
+.inputs .money {
+    display: flex;
+    gap: 10px;
+}
+
+.inputs .money input {
+    width: 20%;
+}
+
+.inputs .money .total {
+    color: black;
+    width: 20%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    font-size: large;
+}
+
+.inputs .money .total::before {
+    content: "Total : ";
+    left: 0;
+    color: rgba(0, 0, 0, 0.476);
+}
+
+.inputs .count {
+    margin: 10px 0;
+}
+
+.inputs .submit {
+    margin: 10px 0;
+}
+
+.inputs .sr-btns {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs .sr-btns button {
+    width: 47%;
+}
+
+@media (max-width:991px) {
+    .inputs .money {
+        flex-direction: column;
+    }
+
+    .inputs .money input {
+        width: auto
+    }
+
+    .inputs .money .total {
+        width: auto
+    }
+}
+
+/* end inputs */
+/* start outputs */
+
+.outputs {
+    margin-top: 30px;
+    text-align: center;
+    overflow-x: auto;
+}
+
+.outputs table {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.outputs table td {
+    padding: 7px ;
+}
+
+.outputs table thead {
+    text-transform: uppercase;
+}
+
+.outputs table tr button {
+    padding: 4px 7px;
+    width: 100%;
+}
+
+/* end outputs */
+
+/* start popup box  */
+
+.over-lay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.768);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-box {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pop-box p {
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.pop-box .btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pop-box button {
+    width: 40%;
+    opacity: .9;
+}
+
+.pop-box button:hover {
+    opacity: 1;
+}
+
+.pop-box .cancle {
+    background-color: rgba(255, 0, 0, 0.894);
+}
